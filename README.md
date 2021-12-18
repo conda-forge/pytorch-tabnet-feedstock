@@ -125,5 +125,8 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@Hartorn](https://github.com/Hartorn/)
+* [@Optimox](https://github.com/Optimox/)
+* [@eduardocarvp](https://github.com/eduardocarvp/)
 * [@sugatoray](https://github.com/sugatoray/)
 
