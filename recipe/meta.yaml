@@ -1,5 +1,5 @@
 {% set name = "pytorch-tabnet" %}
-{% set version = "4.0" %}
+{% set version = "4.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytorch_tabnet-{{ version }}.tar.gz
-  sha256: f5600715777423f9c9ef0f3c98b97d4ff1c9521d7c38ca344469a878026dd876
+  sha256: 18887b993a8bf86ec05a576b5cf93f09e08b778cd9f418c5b254b6566df673a5
 
 build:
   number: 0
