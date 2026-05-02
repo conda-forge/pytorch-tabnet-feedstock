@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytorch_tabnet-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytorch_tabnet-{{ version }}.tar.gz
   sha256: 18887b993a8bf86ec05a576b5cf93f09e08b778cd9f418c5b254b6566df673a5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - poetry >=0.12
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.17,<2.0
     - scikit-learn >0.21
     - scipy >1.4
@@ -35,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/dreamquark-ai/tabnet
