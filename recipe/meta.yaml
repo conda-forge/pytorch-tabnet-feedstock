@@ -11,7 +11,7 @@ source:
   sha256: 18887b993a8bf86ec05a576b5cf93f09e08b778cd9f418c5b254b6566df673a5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +25,7 @@ requirements:
     - numpy >=1.17,<2.0
     - scikit-learn >0.21
     - scipy >1.4
-    - pytorch >=1.2,<2.0
+    - pytorch >=1.2
     - tqdm >=4.36,<5.0
 
 test:
